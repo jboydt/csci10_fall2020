@@ -41,7 +41,8 @@ begin showHelp;
 
   mov(userNumber, bl);
   // 2. Write the statement(s) needed to let the user know how they are
-  //    doing (too low, too high, correct)
+  //    doing (too low, too high, correct); you will need to compare bl,
+  //    the middleman, with computerNumber
 
 end showHelp;
 
