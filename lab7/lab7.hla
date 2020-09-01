@@ -23,7 +23,7 @@ begin getNumber;
 
 end getNumber;
 
-// Asks the user if they want to play again. "Returns" true in al
+// Asks the user if they want to go again. "Returns" true in al
 // if they answer yes, otherwise returns false in al.
 procedure goAgain;
 begin goAgain;
@@ -72,7 +72,7 @@ begin LabSeven;
     showFactors(userInput);
 
     // 8. Print a message showing the result of showFactors;
-    //    if showFactors "returns" (in al) 2, user input is prime; 
+    //    if showFactors "returns" (in al) 2, user input is prime;
     //    any other value means user input is not prime
 
     goAgain();
