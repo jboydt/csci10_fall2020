@@ -2,7 +2,7 @@
 //
 // PROGRAMMER NAME
 // DATE
-program LabSeven;
+program LabEight;
 
 #include("stdlib.hhf");
 
@@ -95,7 +95,7 @@ begin max;
 //     you use in this procedure
 end max;
 
-begin LabSeven;
+begin LabEight;
 
   console.cls();
 
@@ -144,4 +144,4 @@ begin LabSeven;
     console.cls();
   endfor;
 
-end LabSeven;
+end LabEight;
