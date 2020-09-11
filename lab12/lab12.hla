@@ -186,6 +186,8 @@ begin editCell;
 
 end editCell;
 
+// User interface for the user to edit the contents of an array until
+// they choose to stop editing.
 procedure editArray(addr: dword; size: uns32; dtype: uns8);
 begin editArray;
 
