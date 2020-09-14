@@ -35,7 +35,7 @@ begin getNumber;
 end getNumber;
 
 // Print messages letting the player know if their guess is
-// too high, too low, are correct.
+// too high, too low, or correct.
 procedure showHelp(userNumber: uns8; computerNumber: uns8);
 begin showHelp;
 
