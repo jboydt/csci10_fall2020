@@ -133,7 +133,7 @@ begin LabFive;
       //    to the bankroll two times (double the winnings!)
 
       stdout.put(nl, "You won ", wager, "*2 !", nl);
-    elseif (al == 2) then
+    elseif (al == 3) then
 
       // 8. Prepare ax as a middleman for wager, then add ax (the wager)
       //    to the bankroll three times (triple the winnings!)
