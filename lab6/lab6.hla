@@ -87,11 +87,11 @@ begin LabSix;
 
     // -- MUL -- //
 
-    // 5. Now, repeat the entire thing for MUL 
+    // 5. Now, repeat the entire thing for MUL
     //    use the HLA MUL, that allows for two operands
     //    check for overflow (@o), which means that numberOne * numberTwo > 255
 
-    // -- end of SUB -- //
+    // -- end of MUL -- //
 
     playAgain();
     breakif(al == false);
