@@ -138,6 +138,9 @@ begin LabEight;
 
     max(al, bl, cl, dl);
     stdout.newln();
+    
+    totalAndAverage(al, bl, cl, dl);
+    stdout.newln();
 
     goAgain();
     breakif(al == false);
