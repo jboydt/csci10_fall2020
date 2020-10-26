@@ -117,7 +117,7 @@ begin LabTen;
 
     //----- REVERSE THE SIGN USING NEG (NEGATE) (numberTwo) -----//
 
-    // 3. Reverse the sign of numberOne using NEG (NEGATE);
+    // 3. Reverse the sign of numberTwo using NEG (NEGATE);
     //    use al as middleman/result
 
     stdout.put("NEGATED ");
@@ -169,6 +169,9 @@ begin LabTen;
     stdout.newln();
 
     //-----  bitwise XOR to "zero out" both values -----//
+
+    // numberOne "zeroed out"
+
     mov(numberOne, al);
     xor(al, numberOne); // numberOne itself is altered
     stdout.put("XORed 1st number: ");
@@ -185,7 +188,7 @@ begin LabTen;
     stdout.newln();
     goAgain();
     breakif(al == false);
-      console.cls();
+    console.cls();
   endfor;
 
 end LabTen;
