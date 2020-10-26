@@ -90,9 +90,9 @@ end min;
 // value with an appropriate message.
 procedure max(n1: uns8; n2: uns8; n3: uns8; n4: uns8);
 begin max;
-// 11. Compute and display the largest (maximum) of the 4 parameter values
-//     It is import that you PUSH/POP to preserve/restore any registers
-//     you use in this procedure
+  // 11. Compute and display the largest (maximum) of the 4 parameter values
+  //     It is import that you PUSH/POP to preserve/restore any registers
+  //     you use in this procedure
 end max;
 
 begin LabEight;
@@ -138,7 +138,7 @@ begin LabEight;
 
     max(al, bl, cl, dl);
     stdout.newln();
-    
+
     totalAndAverage(al, bl, cl, dl);
     stdout.newln();
 
