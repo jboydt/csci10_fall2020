@@ -91,7 +91,7 @@ begin printValue;
 
   elseif (itype == 3) then
 
-    // 4. Complete this section to print out int16
+    // 4. Complete this section to print out int32
 
   endif;
 
