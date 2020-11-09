@@ -128,29 +128,29 @@ end goAgain;
 procedure print(addr: dword; size: uns32; dtype: uns8);
 begin print;
 
-	pushad();
+  pushad();
 
-	// 1. Copy addr into ebx, so it can be used to compute an effective address
+  // 1. Copy addr into ebx, so it can be used to compute an effective address
 
-	for (mov(0, ecx); ecx < size; inc(ecx)) do
-		if (dtype == 0) then // char
+  for (mov(0, ecx); ecx < size; inc(ecx)) do
+  	if (dtype == 0) then // char
       // (base=ebx, index=ecx, byte scale=1)
-			stdout.put((type char [ebx + ecx * 1]));
-		elseif (dtype == 1) then // int16
+  		stdout.put((type char [ebx + ecx * 1]));
+  	elseif (dtype == 1) then // int16
 
       // 2. Output the int16 (base=ebx, index=ecx, byte scale=2)
 
-		elseif (dtype == 2) then // uns32
+  	elseif (dtype == 2) then // uns32
 
       // 3. Output the uns32 (base=ebx, index=ecx, byte scale=4)
 
-		endif;
-		stdout.put(" ");
-	endfor;
+  	endif;
+  	stdout.put(" ");
+  endfor;
 
   stdout.newln();
 
-	popad();
+  popad();
 
 end print;
 
