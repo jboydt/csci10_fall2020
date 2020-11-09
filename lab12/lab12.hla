@@ -147,6 +147,7 @@ begin print;
 		endif;
 		stdout.put(" ");
 	endfor;
+
   stdout.newln();
 
 	popad();
@@ -160,16 +161,16 @@ end print;
 procedure editCell(addr: dword; size: uns32; dtype: uns8);
 begin editCell;
 
-	pushad();
+  pushad();
 
   mov(size, ecx);
   dec(ecx);
-	getUns32("Enter index of item to edit: ", 0, ecx);
-	mov(eax, ecx); // index to ecx
+  getUns32("Enter index of item to edit: ", 0, ecx);
+  mov(eax, ecx); // index to ecx
 
-	// 4. Copy addr into ebx, so it can be used to compute an effective address
+  // 4. Copy addr into ebx, so it can be used to compute an effective address
 
-	if (dtype == 0) then // char
+  if (dtype == 0) then // char
     getChar("Enter new character: ");
     mov(al, [ebx + ecx]);
   elseif (dtype == 1) then // int16
@@ -182,7 +183,7 @@ begin editCell;
 
   endif;
 
-	popad();
+  popad();
 
 end editCell;
 
