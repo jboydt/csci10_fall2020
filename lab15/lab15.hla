@@ -48,7 +48,7 @@ begin LabFifteen;
 
     console.cls();
 
-    getInt8("Please enter an int8", -127, 127);
+    getInt8("Please enter an int8: ", -127, 127);
     mov(al, input);
 
     stdout.put(nl, "What do you want to do with your input value?", nl);
@@ -56,8 +56,7 @@ begin LabFifteen;
     stdout.put("2. Test to see if it is even", nl);
     stdout.put("3. Reverse its sign", nl);
     stdout.put("4. Test to see if it is prime", nl);
-    stdout.put("your choice: ");
-    getInt8("your choice", 1, 4);
+    getInt8("your choice: ", 1, 4);
 
     console.cls();
 
@@ -136,7 +135,7 @@ begin LabFifteen;
     stdin.getc(); // NEED CODE TO FORCE UPPER-CASE
 
     // This "breakif" has already been translated into low-level code
-    cmp(al, 'N');
+    cmp(chars.toUpper(al), 'N');
     jne GO_AGAIN;
     break;
     GO_AGAIN:
