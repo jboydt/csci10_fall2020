@@ -14,7 +14,6 @@ static
 procedure getFloat (prompt: string);
 begin getFloat;
 
-  // 1. Translate this FOREVER..ENDFOR loop into low-level code
   forever
     try
       stdout.put(prompt);
